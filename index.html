@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion du Personnel - Cloud Computing</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Cloud Personnel</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#features">Fonctionnalités</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Bienvenue dans la gestion du personnel en Cloud</h2>
+            <p>Optimisez la gestion de votre personnel avec des solutions cloud modernes et performantes.</p>
+            <button class="cta-btn">Découvrez Nos Solutions</button>
+        </div>
+    </section>
+
+    <!-- À propos -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="profile">
+                <img src="images/photo-profil.jpg" alt="Photo Profil" class="profile-img">
+                <h3>Gestion du Personnel - Cloud Computing</h3>
+                <p>Nous utilisons les dernières technologies cloud pour offrir des solutions personnalisées pour la gestion de votre équipe.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fonctionnalités -->
+    <section id="features" class="features">
+        <h2>Nos Fonctionnalités</h2>
+        <div class="feature-cards">
+            <div class="card">
+                <h3>Gestion des Ressources</h3>
+                <p>Suivi des ressources humaines en temps réel avec une vue d'ensemble des performances de l'équipe.</p>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjhjI34oPKJAxXvUUECHYRmCyMYABAAGgJ3cw&co=1&gclid=EAIaIQobChMI4YyN-KDyiQMV71FBAh2EZgsjEAAYASAAEgJTA_D_BwE&ohost=www.google.com&cid=CAASJeRoGrKzwqFp5QgKEhFXQHhg4YY3_uBOFSIPHlxtNHAZv6-dWyI&sig=AOD64_0R_QBfPdejI00p_zIbJAoMINjiSw&q&adurl&ved=2ahUKEwi54oj4oPKJAxXOR6QEHRSHO10Q0Qx6BAgOEAE">Cliquez ici</a> <p>Pour en savoir plus</p>
+            </div>
+            <div class="card">
+                <h3>Optimisation du Cloud</h3>
+                <p>Utilisation de la puissance du cloud pour automatiser les tâches de gestion et réduire les coûts.</p>
+                <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://eviden.com/fr-fr/solutions/cloud/cloud-optimize/&ved=2ahUKEwjIq86zofKJAxX6RaQEHbTjASYQFnoECBcQAQ&usg=AOvVaw0UrXAEjnj93OmZ87HUHCe4">Cliquez ici</a> <p>Pour en savoir plus</p>
+            </div>
+            <div class="card">
+                <h3>Intégration avec des Outils de Collaboration</h3>
+                <p>Facilitez la collaboration en équipe avec des intégrations fluides d'outils populaires.</p>
+                <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjo1OTOovKJAxVeBwYAHdGwOgcYABAAGgJ3cw&co=1&gclid=EAIaIQobChMI6NTkzqLyiQMVXgcGAB3RsDoHEAAYASAAEgLpnfD_BwE&ohost=www.google.com&cid=CAASJeRoLIaVOiUl8wFY8EyBeA2rDlJI4_URGNZlEah9exMUx_EDt6o&sig=AOD64_322wYAxchJdwrRkZkXiUQBRpSlEg&q&adurl&ved=2ahUKEwikruDOovKJAxU7TKQEHdDHHAcQ0Qx6BAgOEAE">Cliquez ici</a> <p>Pour en savoir plus</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cloud Personnel. Tous droits réservés.</p>
+        <p>Contactez-nous à : <span id="email"></span></p>
+    </footer>
+
+    <script>
+        // Masquer l'email dans le footer
+        document.addEventListener("DOMContentLoaded", function() {
+            var emailParts = ["ngoumouevrad33", "gmail", "com"];
+            var email = emailParts[0] + "@" + emailParts[1] + "." + emailParts[2];
+            
+            var emailElement = document.getElementById("email");
+            emailElement.innerHTML = "<a href='mailto:" + email + "'>" + email + "</a>";
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
